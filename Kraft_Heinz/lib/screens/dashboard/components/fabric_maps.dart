@@ -1,7 +1,6 @@
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
-import 'package:admin/responsive.dart';
 
 // void main() {
 //   return runApp(MapsApp());
@@ -38,31 +37,33 @@ class _MyHomePageState extends State<MapsApp> {
   @override
   void initState() {
     _data = const <Model>[
-      Model('United States', 198),
+      Model('United States of America', 200),
       Model('Australia', 54),
+      Model('Costa Rica', 300),
       Model('Belgium', 51),
       Model('Brazil', 400),
       Model('Canada', 12),
-      Model('China', 14),
+      Model('China', 201),
       Model('Czech Republic', 14),
       Model('Denmark', 14),
-      Model('Finland', 14),
+      Model('Finland', 400),
       Model('France', 14),
       Model('Germany', 14),
-      Model('Ireland', 14),
+      Model('Ireland', 200),
       Model('India', 14),
       Model('Indonesia', 14),
       Model('Italy', 14),
       Model('Japan', 14),
       Model('Korea', 14),
       Model('Mexico', 14),
-      Model('Middle East', 14),
+      Model('Egypt', 14),
+      Model('United Arab Emirates', 200),
       Model('Netherlands', 14),
       Model('New Zealand', 14),
       Model('Norway', 14),
       Model('Poland', 14),
-      Model('Republic of the Philippines', 14),
-      Model('Russia', 14),
+      Model('Philippines', 201),
+      Model('Russia', 200),
       Model('Spain', 14),
       Model('Sweden', 14),
       Model('United Kingdom', 14),
@@ -82,9 +83,9 @@ class _MyHomePageState extends State<MapsApp> {
         MapColorMapper(
           from: 101, to: 200, color: Colors.blueAccent, text: '100 - 200/km'),
         MapColorMapper(
-          from: 201, to: 300, color: Colors.deepOrangeAccent, text: '200 - 300/km'),
+          from: 201, to: 300, color: Colors.pink, text: '200 - 300/km'),
         MapColorMapper(
-          from: 301, to: 400, color: Colors.redAccent, text: '300 - 400/km'),
+          from: 301, to: 400, color: Colors.red, text: '300 - 400/km'),
     ]);
     super.initState();
   }
